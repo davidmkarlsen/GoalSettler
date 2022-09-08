@@ -35,7 +35,26 @@ export default function Dashboard() {
 				</div>
 			</div>
 			<div className="playBackground">
-				
+				<div className="dashboardInfo">
+					s
+				</div>
+				<div className="pageNav">
+					<div className="pageNav--mainLink">
+						+ New Task
+					</div>
+					<div className="pageNav--link">
+						Dashboard
+					</div>
+					<div className="pageNav--link">
+						Tasks
+					</div>
+					<div className="pageNav--link">
+						Friends
+					</div>
+					<div className="pageNav--link">
+						Shop
+					</div>
+				</div>
 			</div>
 		</div>
 	)

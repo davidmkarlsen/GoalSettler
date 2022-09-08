@@ -4,7 +4,7 @@ $primaryColor: #B1DDF1;
 $color2: #E8871E;
 $color3: #EDB458;
 $color4: #575D90;
-$color4: #8CD790;
+$color5: #8CD790;
 
 * {
 	box-sizing: border-box;
@@ -13,6 +13,10 @@ $color4: #8CD790;
 
 body {
 	margin: 0;
+	-webkit-user-select:none;
+	-moz-user-select:-moz-none;
+	-ms-user-select:none;
+	user-select:none
 }
 
 html {
@@ -98,6 +102,40 @@ html {
 		}
 		.rightSide--action:hover {
 			background-color: #B1DDF1;
+			cursor: pointer;
+		}
+	}
+}
+
+.playBackground {
+	padding-top: 400px;
+	background-image: url("../../public/assets/background.jpg");
+	.dashboardInfo {
+		padding: 10px;
+		background-color: wheat;
+		border-radius: 10px;
+	}
+	.pageNav {
+		margin-top: 10px;
+		background-color: wheat;
+		border-radius: 10px;
+		overflow: hidden;
+		display: flex;
+		justify-content: space-between;
+		.pageNav--link, .pageNav--mainLink {
+			width: 100%;
+			padding: 15px;
+			font-weight: 600;
+		}
+		.pageNav--link {
+			background-color: $color3;
+			border-left: 2px solid rgb(194, 135, 99);
+		}
+		.pageNav--mainLink {
+			background-color: $color2;
+			color: white;
+		}
+		.pageNav--link:hover, .pageNav--mainLink:hover {
 			cursor: pointer;
 		}
 	}
